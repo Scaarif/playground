@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import illustration from './assets/images/illustration-dashboard.png'
 import logo from './assets/images/logo.svg'
 import { TiSocialFacebook, TiSocialTwitter, TiSocialInstagram } from 'react-icons/ti'
