@@ -47,7 +47,10 @@ function App() {
             focus:border-slate-300`}
             onChange={(e) => {setError(false); setEmail(e.target.value)}}
           />
-          {error && <span className="md:absolute top-12 left-12 italic text-xs text-LightRed text-center">Please provide a valid email</span>}
+          {error && <span className="md:absolute top-12 left-12 italic text-xs text-LightRed text-center">
+            {email.length ? 'Please provide a valid email' : 'Whoops! It looks like you forgot to add your email'}
+          </span>
+          }
         </div>
         <span className="bg-Blue shadow-md p-2 px-10 rounded-3xl text-white transition-colors shadow-PaleBlue
           hover:bg-PaleBlue cursor-pointer text-center w-full md:w-auto" onClick={validateEmail}>Notify Me</span>
